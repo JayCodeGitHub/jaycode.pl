@@ -14,9 +14,11 @@ export const GlobalStyle = createGlobalStyle`
     }
     html {
         font-size: 62.5%;
+        scroll-behavior: smooth;
     }
     body {
         max-width: 100vw;
+        position: absolute;
         overflow-x: hidden;
         background-color: #ECE9EA;
         font-family: ${inter.style.fontFamily};
