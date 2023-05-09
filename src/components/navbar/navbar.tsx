@@ -6,11 +6,20 @@ import {
   Wrapper,
   LogoWrapper,
   HamburgerWrapper,
+  Hamburger,
+  StyledMobileNavigation,
 } from "./navbar.styles";
-import { NavigationItems } from "@/assets/NavigationItems";
 import NavLink from "../navlink/navlink";
+import { NavigationItems } from "@/assets/NavigationItems";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleNavigation = () => {
+    setIsOpen(!isOpen);
+  };
+  const setIsOpenFalse = () => {
+    setIsOpen(false);
+  };
   return (
     <OuterWrapper>
       <Wrapper>
@@ -22,12 +31,30 @@ export default function Navbar() {
         <StyledNavigation>
           {NavigationItems.map((item) => (
             <li key={item.name}>
-              <NavLink href={item.href}>{item.name}</NavLink>
+              <NavLink href={item.href} onClick={setIsOpenFalse}>
+                {item.name}
+              </NavLink>
             </li>
           ))}
         </StyledNavigation>
-        <HamburgerWrapper aria-label="Hamburger Navigation Button"></HamburgerWrapper>
+        <HamburgerWrapper
+          onClick={toggleNavigation}
+          aria-label="Hamburger Navigation Button"
+        >
+          <Hamburger isOpen={isOpen} />
+        </HamburgerWrapper>
       </Wrapper>
+      <StyledMobileNavigation isOpen={isOpen}>
+        <ul>
+          {NavigationItems.map((item) => (
+            <li key={item.name}>
+              <NavLink href={item.href} onClick={setIsOpenFalse}>
+                {item.name}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </StyledMobileNavigation>
     </OuterWrapper>
   );
 }
