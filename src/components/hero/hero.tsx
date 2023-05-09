@@ -25,8 +25,8 @@ export default function Hero() {
     <StyledOuterWrapper>
       <StyledImage
         src="/images/profile.jpg"
-        width={1000}
-        height={1286}
+        width={600}
+        height={772}
         alt="Profile image"
       />
       <StyledWrapper>
