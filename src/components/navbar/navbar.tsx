@@ -1,23 +1,33 @@
+import { useState } from "react";
 import Link from "next/link";
-import { Wrapper } from "./navbar.styles";
+import {
+  OuterWrapper,
+  StyledNavigation,
+  Wrapper,
+  LogoWrapper,
+  HamburgerWrapper,
+} from "./navbar.styles";
+import { NavigationItems } from "@/assets/NavigationItems";
+import NavLink from "../navlink/navlink";
 
-export default function NavBar() {
+export default function Navbar() {
   return (
-    <Wrapper>
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
-          <Link href="/experience">Experience</Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact</Link>
-        </li>
-      </ul>
-    </Wrapper>
+    <OuterWrapper>
+      <Wrapper>
+        <LogoWrapper>
+          <Link href="/">
+            Jay<span>Code</span>
+          </Link>
+        </LogoWrapper>
+        <StyledNavigation>
+          {NavigationItems.map((item) => (
+            <li key={item.name}>
+              <NavLink href={item.href}>{item.name}</NavLink>
+            </li>
+          ))}
+        </StyledNavigation>
+        <HamburgerWrapper aria-label="Hamburger Navigation Button"></HamburgerWrapper>
+      </Wrapper>
+    </OuterWrapper>
   );
 }
