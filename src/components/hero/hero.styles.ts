@@ -3,24 +3,42 @@ import Image from "next/image";
 
 export const StyledOuterWrapper = styled.header`
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
     width: 100vw;
     height: calc(100vh - 8rem);
-    padding: 8% 18%;
+    padding: 2rem 0;
+    ${({ theme }) => theme.mq.tablet}  { 
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10rem;
+        padding: 8% 10%;
+    }
+    ${({ theme }) => theme.mq.bigDesktop}  {
+        padding: 8% 18%;
+    }
 `
 
 export const StyledWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 35rem;
-    margin-left: 10rem;
+    height: 32vh;
+    ${({ theme }) => theme.mq.desktop}  { 
+        height: 35rem;
+    }
 `
 
 export const StyledButtonsWrapper = styled.span`
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 20px;
+    ${({ theme }) => theme.mq.desktop}  {
+        flex-direction: row;
+        padding-left: 0;
+    }
 `
 
 export const StyledTitle = styled.h1`
@@ -50,9 +68,13 @@ export const StyledImage = styled(Image)`
     object-fit: cover;
     object-position: top;
     border-radius: 1.2rem;
-    width: 90vw;
-    height: 40vw;
-    @media (min-width: 1024px) {
+    width: 30vh;
+    height: 36vh;
+    ${({ theme }) => theme.mq.desktop}  {
+        width: 23vw;
+        height: 30vw;
+    }
+    ${({ theme }) => theme.mq.bigDesktop}  {
         width: 18vw;
         height: 23vw;
     }

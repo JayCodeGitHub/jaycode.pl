@@ -22,6 +22,12 @@ const heroItems = {
 export default function Hero() {
   return (
     <StyledOuterWrapper>
+      <StyledImage
+        src="/images/profile.jpg"
+        width={1000}
+        height={615}
+        alt="Profile image"
+      />
       <StyledWrapper>
         <StyledTitle>{heroItems.title}</StyledTitle>
         <StyledSubTitle>{heroItems.subTitle}</StyledSubTitle>
@@ -34,12 +40,6 @@ export default function Hero() {
           </Link>
         </StyledButtonsWrapper>
       </StyledWrapper>
-      <StyledImage
-        src="/images/profile.jpg"
-        width={1000}
-        height={615}
-        alt="Profile image"
-      />
       <StyledScrollButtonWrapper href="#projects">
         <button>See More</button>
       </StyledScrollButtonWrapper>

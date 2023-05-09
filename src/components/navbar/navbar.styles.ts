@@ -11,7 +11,7 @@ export const OuterWrapper = styled.nav`
     justify-content: space-between;
     padding: 0 5vw;
     color: ${({ theme }) => theme.white};
-    ${({ theme }) => theme.mq.desktop} {
+    ${({ theme }) => theme.mq.tablet} {
         padding: 0vw 10vw;
     }
 `
@@ -40,7 +40,7 @@ export const LogoWrapper = styled.div`
 
 export const StyledNavigation = styled.ul`
     display: none;
-    ${({ theme }) => theme.mq.desktop} {
+    ${({ theme }) => theme.mq.tablet} {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -64,7 +64,7 @@ export const HamburgerWrapper = styled.button`
     cursor: pointer;
     background-color: transparent;
     z-index: 20;
-    ${({ theme }) => theme.mq.desktop} {
+    ${({ theme }) => theme.mq.tablet} {
         display: none;
     }
 `;
