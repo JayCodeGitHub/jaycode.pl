@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const BackgroundWrapper = styled.div`
+export const StyledBackgroundWrapper = styled.div`
   position: absolute;
   top: 0;
   left: 0;
