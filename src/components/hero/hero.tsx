@@ -41,7 +41,10 @@ export default function Hero() {
           </Link>
         </StyledButtonsWrapper>
       </StyledWrapper>
-      <StyledScrollButtonWrapper href="#projects">
+      <StyledScrollButtonWrapper
+        href="#projects"
+        aria-label="Scroll Down Button"
+      >
         <ScrollButton />
       </StyledScrollButtonWrapper>
     </StyledOuterWrapper>
