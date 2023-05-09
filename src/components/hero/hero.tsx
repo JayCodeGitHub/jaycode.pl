@@ -9,6 +9,7 @@ import {
 } from "./hero.styles";
 import Button from "../button/button.styles";
 import Link from "next/link";
+import ScrollButton from "../scrollButton/scrollButton";
 
 const heroItems = {
   title: `Hi, I'm Jakub`,
@@ -41,7 +42,7 @@ export default function Hero() {
         </StyledButtonsWrapper>
       </StyledWrapper>
       <StyledScrollButtonWrapper href="#projects">
-        <button>See More</button>
+        <ScrollButton />
       </StyledScrollButtonWrapper>
     </StyledOuterWrapper>
   );
