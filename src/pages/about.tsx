@@ -1,9 +1,9 @@
-import Hero from "@/components/hero/hero";
+import Header from "@/components/hero/header";
 
 export default function About() {
   return (
     <main>
-      <Hero title="About" />
+      <Header title="About" />
     </main>
   );
 }

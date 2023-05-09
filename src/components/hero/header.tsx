@@ -1,10 +1,10 @@
-import { StyledWrapper, StyledTitle } from "./hero.styles";
+import { StyledWrapper, StyledTitle } from "./header.styles";
 
 export interface HeaderProps {
   title: string;
 }
 
-export default function Hero({ title }: HeaderProps) {
+export default function Header({ title }: HeaderProps) {
   return (
     <StyledWrapper>
       <StyledTitle>{title}</StyledTitle>

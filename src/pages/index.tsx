@@ -1,9 +1,9 @@
-import Hero from "@/components/hero/hero";
+import Header from "@/components/hero/header";
 
 export default function Home() {
   return (
     <main>
-      <Hero title="JayCode" />
+      <Header title="JayCode" />
     </main>
   );
 }

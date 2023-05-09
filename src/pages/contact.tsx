@@ -1,9 +1,9 @@
-import Hero from "@/components/hero/hero";
+import Header from "@/components/hero/header";
 
 export default function Contact() {
   return (
     <main>
-      <Hero title="contact" />
+      <Header title="contact" />
     </main>
   );
 }
