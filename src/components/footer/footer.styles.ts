@@ -7,7 +7,6 @@ export const StyledWrapper = styled.footer`
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: ${({ theme }) => theme.tertiary};
     border-top: solid 2px ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.white};
     ${({ theme }) => theme.mq.desktop}  {
