@@ -1,6 +1,6 @@
 
 import styled from "styled-components";
 
-export const StyledWrapper = styled.header`
+export const StyledWrapper = styled.section`
 height: 100vh;
 `

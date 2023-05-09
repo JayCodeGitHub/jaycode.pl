@@ -3,6 +3,9 @@ import {
   StyledTitle,
   StyledSubTitle,
   StyledImage,
+  StyledScrollButtonWrapper,
+  StyledOuterWrapper,
+  StyledButtonsWrapper,
 } from "./hero.styles";
 import Button from "../button/button.styles";
 import Link from "next/link";
@@ -18,24 +21,28 @@ const heroItems = {
 
 export default function Hero() {
   return (
-    <StyledWrapper>
-      <StyledTitle>{heroItems.title}</StyledTitle>
-      <StyledSubTitle>{heroItems.subTitle}</StyledSubTitle>
-      <a href="#projects">
-        <button>See More</button>
-      </a>
-      <a href={heroItems.buttonHref} target="_blank">
-        <Button>{heroItems.button}</Button>
-      </a>
-      <Link href={heroItems.secondButtonHref}>
-        <Button>{heroItems.secondButton}</Button>
-      </Link>
+    <StyledOuterWrapper>
+      <StyledWrapper>
+        <StyledTitle>{heroItems.title}</StyledTitle>
+        <StyledSubTitle>{heroItems.subTitle}</StyledSubTitle>
+        <StyledButtonsWrapper>
+          <a href={heroItems.buttonHref} target="_blank">
+            <Button>{heroItems.button}</Button>
+          </a>
+          <Link href={heroItems.secondButtonHref}>
+            <Button>{heroItems.secondButton}</Button>
+          </Link>
+        </StyledButtonsWrapper>
+      </StyledWrapper>
       <StyledImage
         src="/images/profile.jpg"
         width={1000}
         height={615}
         alt="Profile image"
       />
-    </StyledWrapper>
+      <StyledScrollButtonWrapper href="#projects">
+        <button>See More</button>
+      </StyledScrollButtonWrapper>
+    </StyledOuterWrapper>
   );
 }
