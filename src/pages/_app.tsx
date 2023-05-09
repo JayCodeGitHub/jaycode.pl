@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
           I will be a good member of the team because I learn quickly and work well in a team."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.jpg" />
       </Head>
       <Layout>
         <Component {...pageProps} />
