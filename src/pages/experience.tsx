@@ -1,7 +1,9 @@
+import Hero from "@/components/hero/hero";
+
 export default function Experience() {
   return (
     <main>
-      <h1>Experience</h1>
+      <Hero title="Experience" />
     </main>
   );
 }

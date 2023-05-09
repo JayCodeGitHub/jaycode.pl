@@ -1,7 +1,9 @@
+import Hero from "@/components/hero/hero";
+
 export default function About() {
   return (
     <main>
-      <h1>About</h1>
+      <Hero title="About" />
     </main>
   );
 }
