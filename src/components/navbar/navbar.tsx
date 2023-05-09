@@ -10,7 +10,7 @@ import {
   StyledMobileNavigation,
 } from "./navbar.styles";
 import NavLink from "../navlink/navlink";
-import { NavigationItems } from "@/assets/NavigationItems";
+import { NavigationItems } from "@/assets/navigationItems";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
