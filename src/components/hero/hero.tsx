@@ -24,9 +24,10 @@ export default function Hero() {
   return (
     <StyledOuterWrapper>
       <StyledImage
-        src="/images/profile.jpg"
-        width={600}
-        height={772}
+        src="/images/profile.webp"
+        loading="eager"
+        width={500}
+        height={643}
         alt="Profile image"
       />
       <StyledWrapper>
