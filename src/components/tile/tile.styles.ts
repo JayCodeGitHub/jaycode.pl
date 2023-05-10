@@ -10,11 +10,11 @@ export const StyledWrapper = styled.div`
 `
 
 export const StyledLink = styled.div`
-       position: absolute;
-       top: 0;
-       width: 100%;
-        height: 70%;
-       z-index: 4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    z-index: 4;
 `
     
 export const StyledTileContent = styled.div`

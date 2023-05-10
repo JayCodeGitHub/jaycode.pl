@@ -33,6 +33,7 @@ export default function Tile({
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}
         href={href}
+        aria-label="Link to project website"
       />
       <StyledTileContent>
         <StyledTitle>{title}</StyledTitle>

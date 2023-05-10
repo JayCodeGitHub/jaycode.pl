@@ -6,14 +6,13 @@ import {
 } from "./arrowButton.styles";
 
 export interface ArrowButtonProps {
-  children: React.ReactNode;
   to: string;
 }
 
-const ArrowButton = ({ children, to }: ArrowButtonProps) => {
+const ArrowButton = ({ to }: ArrowButtonProps) => {
   return (
-    <StyledOuterWrapper href={to}>
-      <span>{children}</span>
+    <StyledOuterWrapper href={to} aria-label="Link to experience page">
+      <span>More Projects</span>
       <StyledWrapper>
         <div>
           <svg width="60" height="60">

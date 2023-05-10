@@ -13,7 +13,7 @@ export default function Tiles() {
     <StyledOuterWrapper>
       <StyledHeader>
         <StyledTitle>Some of my projects</StyledTitle>
-        <ArrowButton to="/experience">See More</ArrowButton>
+        <ArrowButton to="/experience" />
       </StyledHeader>
       <StyledWrapper id="projects">
         {TilesItems.map(
