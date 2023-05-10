@@ -10,23 +10,40 @@ import {
 } from "./tile.styles";
 import Button from "../button/button.styles";
 
-export default function Tile() {
+interface TileProps {
+  href: string;
+  title: string;
+  description: string;
+  buttonHref: string;
+  color: string;
+  image: string;
+}
+
+export default function Tile({
+  href,
+  title,
+  description,
+  buttonHref,
+  color,
+  image,
+}: TileProps) {
   const [hover, setHover] = useState(false);
   return (
     <StyledWrapper>
-      <StyledLink
+      <a
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}
+        href={href}
       />
       <StyledTileContent>
-        <StyledTitle>Karate Team Oborniki</StyledTitle>
-        <StyledDescription>Description</StyledDescription>
+        <StyledTitle>{title}</StyledTitle>
+        <StyledDescription>{description}</StyledDescription>
         <Button>See More</Button>
       </StyledTileContent>
-      <StyledGradient color="red" />
+      <StyledGradient color={color} />
       <StyledBackgroundImage
         hover={hover}
-        src="/images/profile.webp"
+        src={image}
         width={500}
         height={643}
         alt="Project image"

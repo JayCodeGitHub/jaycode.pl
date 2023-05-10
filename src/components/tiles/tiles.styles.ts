@@ -6,6 +6,14 @@ export const StyledWrapper = styled.section`
     height: 90vh;
     color: white;
     margin: 5vh 0;
+    a {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 70%;
+        z-index: 4;
+    }
 `
 
 export const StyledTile = styled.div`
@@ -15,13 +23,6 @@ export const StyledTile = styled.div`
     overflow: hidden;
 `
 
-export const StyledLink = styled.div`
-       position: absolute;
-       top: 0;
-       width: 100%;
-        height: 70%;
-       z-index: 4;
-`
     
 export const StyledTileContent = styled.div`
     z-index: 3;

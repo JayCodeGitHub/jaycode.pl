@@ -56,7 +56,7 @@ export const StyledBackgroundImage = styled(Image)<{hover: boolean}>`
     position: absolute;
     z-index: 1;
     filter: grayscale(${({ hover }) => (hover ? '0%' : '100%')});
-    transform: scale(${({ hover }) => (hover ? '1.2' : '1')});
-    transition: transform 0.2s ease-in-out;
+    transform: scale(${({ hover }) => (hover ? '1.1' : '1')});
+    transition: transform 0.3s ease-in-out;
 `
 
