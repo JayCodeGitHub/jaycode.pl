@@ -1,46 +1,46 @@
 import styled from 'styled-components'
 
 export const StyledOuterWrapper = styled.section`
-    width: 100%;
     display: flex;
-    justify-content: center;
-    min-height: calc(65vh);
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(65vh);
     ${({ theme }) => theme.mq.desktop} {  
-        height: 55vh;
         flex-direction: row;
+        height: 55vh;
     }
 `
 
 
 export const StyledWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
     margin: 2rem 0;
     ${({ theme }) => theme.mq.desktop} {        
-        width: 100%;
-        margin: 0;
         flex-direction: row;
         justify-content: space-around;
+        width: 100%;
+        margin: 0;
     }
 `
 
 export const StyledContactItem = styled.a`
-    font-size: ${({ theme }) => theme.font.size.s};
-    text-decoration: none;
     display: flex;
-    width: 90%;
     justify-content: flex-start;
     align-items: center;
-    padding: 4rem 6rem;
+    font-size: ${({ theme }) => theme.font.size.s};
+    text-decoration: none;
     border-radius: 2rem;
     border: 2px solid ${({ theme }) => theme.theme};
+    width: 90%;
     margin: 2rem 0;
+    padding: 4rem 6rem;
     color: ${({ theme }) => theme.white};
     transition: color 0.1s ease-in-out;
     ${({ theme }) => theme.mq.desktop} {        
