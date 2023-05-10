@@ -7,7 +7,7 @@ export const StyledHeader = styled.div`
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
-    margin: 5rem 15rem;
+    margin: 5rem 20rem;
     ${({ theme }) => theme.mq.desktop} {
         align-items: center;
         flex-direction: row;
