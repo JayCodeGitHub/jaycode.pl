@@ -1,7 +1,6 @@
 import { useState } from "react";
 import {
   StyledWrapper,
-  StyledLink,
   StyledTileContent,
   StyledTitle,
   StyledDescription,
@@ -38,14 +37,14 @@ export default function Tile({
       <StyledTileContent>
         <StyledTitle>{title}</StyledTitle>
         <StyledDescription>{description}</StyledDescription>
-        <Button>See More</Button>
+        <Button>Source</Button>
       </StyledTileContent>
       <StyledGradient color={color} />
       <StyledBackgroundImage
         hover={hover}
         src={image}
-        width={500}
-        height={643}
+        width={1590}
+        height={1000}
         alt="Project image"
       />
     </StyledWrapper>

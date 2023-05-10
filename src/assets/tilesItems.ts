@@ -1,11 +1,11 @@
 export const TilesItems = [
     {
       href: "https://karate-team.netlify.app/",
-      title: "Karate Team Obornik",
+      title: "Karate Team Oborniki",
       description: "Description",
       buttonHref: "/experiance",
       color: "red",
-      image: "/images/profile.webp",
+      image: "/images/karate.webp",
     },
     {
       href: "https://karate-team.netlify.app/",
@@ -13,7 +13,7 @@ export const TilesItems = [
       description: "Descshewrherw nernj ription",
       buttonHref: "/experiance",
       color: "green",
-      image: "/images/profile.webp",
+      image: "/images/notes.webp",
     },
     {
       href: "https://karate-team.netlify.app/",
@@ -21,6 +21,6 @@ export const TilesItems = [
       description: "Description",
       buttonHref: "/experiance",
       color: "pink",
-      image: "/images/profile.webp",
+      image: "/images/clothes.webp",
     },
   ];
