@@ -6,12 +6,14 @@ import {
 } from "./tiles.styles";
 import Tile from "../tile/tile";
 import { TilesItems } from "@/assets/tilesItems";
+import ArrowButton from "../arrowButton/arrowButton";
 
 export default function Tiles() {
   return (
     <StyledOuterWrapper>
       <StyledHeader>
         <StyledTitle>Some of my projects</StyledTitle>
+        <ArrowButton to="/experience">See More</ArrowButton>
       </StyledHeader>
       <StyledWrapper id="projects">
         {TilesItems.map(
