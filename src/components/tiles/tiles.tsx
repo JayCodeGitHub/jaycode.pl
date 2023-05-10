@@ -1,32 +1,6 @@
 import { StyledWrapper } from "./tiles.styles";
 import Tile from "../tile/tile";
-
-const TilesItems = [
-  {
-    href: "https://karate-team.netlify.app/",
-    title: "Karate Team Obornik",
-    description: "Description",
-    buttonHref: "/experiance",
-    color: "red",
-    image: "/images/profile.webp",
-  },
-  {
-    href: "https://karate-team.netlify.app/",
-    title: "Happy Notes",
-    description: "Descshewrherw nernj ription",
-    buttonHref: "/experiance",
-    color: "green",
-    image: "/images/profile.webp",
-  },
-  {
-    href: "https://karate-team.netlify.app/",
-    title: "Clothify",
-    description: "Description",
-    buttonHref: "/experiance",
-    color: "pink",
-    image: "/images/profile.webp",
-  },
-];
+import { TilesItems } from "@/assets/tilesItems";
 
 export default function Tiles() {
   return (
@@ -34,7 +8,7 @@ export default function Tiles() {
       {TilesItems.map(
         ({ href, title, description, buttonHref, color, image }, i) => (
           <Tile
-            key={title}
+            key={i}
             href={href}
             title={title}
             description={description}
