@@ -64,7 +64,7 @@ export const StyledGradient = styled.div<{color: string}>`
     height: 100%;
 `
 
-export const StyledBackgroundImage = styled(Image)<{hover: boolean}>`
+export const StyledBackgroundImage = styled(Image)<{isactive: string}>`
     position: absolute;
     top: 0;
     z-index: 1;
@@ -72,8 +72,8 @@ export const StyledBackgroundImage = styled(Image)<{hover: boolean}>`
     object-position: top;
     width: 100%;
     height: 100%;
-    filter: grayscale(${({ hover }) => (hover ? '0%' : '100%')});
-    transform: scale(${({ hover }) => (hover ? '1.1' : '1')});
+    filter: grayscale(${({ isactive }) => isactive == "true" ? '0%' : '100%'});
+    transform: scale(${({ isactive }) => isactive == "true" ? '1.1' : '1'});
     transition: all 0.3s ease-in-out;
 `
 

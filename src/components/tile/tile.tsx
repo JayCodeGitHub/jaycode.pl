@@ -27,14 +27,14 @@ export default function Tile({
   color,
   image,
 }: TileProps) {
-  const [hover, setHover] = useState(false);
+  const [isActive, setIsActive] = useState("false");
   return (
     <StyledWrapper>
       <StyledLink
-        onMouseOver={() => setHover(true)}
-        onMouseOut={() => setHover(false)}
         href={href}
         aria-label="Link to project website"
+        onMouseEnter={() => setIsActive("true")}
+        onMouseLeave={() => setIsActive("false")}
       />
       <StyledTileContent>
         <StyledTitle>{title}</StyledTitle>
@@ -45,11 +45,11 @@ export default function Tile({
       </StyledTileContent>
       <StyledGradient color={color} />
       <StyledBackgroundImage
-        hover={hover}
         src={image}
         width={1590}
         height={1000}
         alt="Project image"
+        isactive={isActive}
       />
     </StyledWrapper>
   );
