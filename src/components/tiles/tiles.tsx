@@ -10,12 +10,12 @@ import ArrowButton from "../arrowButton/arrowButton";
 
 export default function Tiles() {
   return (
-    <StyledOuterWrapper>
+    <StyledOuterWrapper id="projects">
       <StyledHeader>
         <StyledTitle>Some of my projects</StyledTitle>
         <ArrowButton to="/experience" />
       </StyledHeader>
-      <StyledWrapper id="projects">
+      <StyledWrapper>
         {TilesItems.map(
           ({ href, title, description, buttonHref, color, image }, i) => (
             <Tile

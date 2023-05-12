@@ -1,13 +1,14 @@
 import { useState } from "react";
 import {
   StyledWrapper,
+  StyledLink,
+  StyledButton,
   StyledTileContent,
   StyledTitle,
   StyledDescription,
   StyledGradient,
   StyledBackgroundImage,
 } from "./tile.styles";
-import Button from "../button/button.styles";
 
 interface TileProps {
   href: string;
@@ -29,7 +30,7 @@ export default function Tile({
   const [hover, setHover] = useState(false);
   return (
     <StyledWrapper>
-      <a
+      <StyledLink
         onMouseOver={() => setHover(true)}
         onMouseOut={() => setHover(false)}
         href={href}
@@ -38,7 +39,9 @@ export default function Tile({
       <StyledTileContent>
         <StyledTitle>{title}</StyledTitle>
         <StyledDescription>{description}</StyledDescription>
-        <Button>Source</Button>
+        <a href={buttonHref}>
+          <StyledButton>Source</StyledButton>
+        </a>
       </StyledTileContent>
       <StyledGradient color={color} />
       <StyledBackgroundImage

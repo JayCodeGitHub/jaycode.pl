@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
-export const StyledOuterWrapper = styled.section``
+export const StyledOuterWrapper = styled.section`
+    padding: 10rem 0;
+`
 
 export const StyledHeader = styled.div`
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-start;
-    margin: 5rem 20rem;
-    ${({ theme }) => theme.mq.desktop} {
-        align-items: center;
+    margin: 5%;
+    ${({ theme }) => theme.mq.tablet} {
         flex-direction: row;
+        align-items: center;
+        margin: 0 15rem;
     }
 `
 
@@ -25,17 +28,18 @@ export const StyledTitle = styled.h2`
 
 export const StyledWrapper = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    height: 70vh;
+    align-items: center;
+    gap: 5rem;
     color: white;
     margin: 5vh 0;
-    padding: 0 8%;
-    a {
-        cursor: pointer;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 70%;
-        z-index: 4;
+    padding: 0;
+    ${({ theme }) => theme.mq.tablet} {
+        flex-direction: row;
+        height: 70vh;
+    }
+    ${({ theme }) => theme.mq.bigDesktop} {
+        padding: 0 8%;
     }
 `
