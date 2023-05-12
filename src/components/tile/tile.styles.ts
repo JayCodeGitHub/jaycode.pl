@@ -28,6 +28,7 @@ export const StyledLink = styled.a`
 
 export const StyledButton = styled(Button)`
     width: 100%;
+    margin: 0;
 `
     
 export const StyledTileContent = styled.div`
