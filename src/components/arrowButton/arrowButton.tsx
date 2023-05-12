@@ -18,7 +18,7 @@ const ArrowButton = ({ to }: ArrowButtonProps) => {
           <svg width="60" height="60">
             <circle
               stroke="currentColor"
-              stroke-width="2"
+              strokeWidth="2"
               fill="transparent"
               r="28"
               cx="30"
@@ -26,13 +26,13 @@ const ArrowButton = ({ to }: ArrowButtonProps) => {
             ></circle>
             <circle
               stroke="currentColor"
-              stroke-width="2"
+              strokeWidth="2"
               fill="transparent"
               r="28"
               cx="30"
               cy="30"
               transform-origin="30px 30px"
-              stroke-dashoffset="175.92918860102841"
+              strokeDashoffset="175.92918860102841"
             ></circle>
           </svg>
         </div>
@@ -45,8 +45,8 @@ const ArrowButton = ({ to }: ArrowButtonProps) => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M15.101 5.5V23.1094L9.40108 17.4095L8.14807 18.6619L15.9862 26.5L23.852 18.6342L22.5996 17.3817L16.8725 23.1094V5.5H15.101Z"
               fill="currentColor"
             ></path>
