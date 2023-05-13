@@ -7,9 +7,11 @@ export const StyledOuterWrapper = styled.section`
     align-items: center;
     width: 100%;
     min-height: calc(65vh);
-    ${({ theme }) => theme.mq.desktop} {  
+    padding: 2.5vw;
+    ${({ theme }) => theme.mq.tablet} {  
         flex-direction: row;
         height: 55vh;
+        padding: 2.5vw 15vw;
     }
 `
 
@@ -22,7 +24,7 @@ export const StyledWrapper = styled.div`
     width: 100%;
     height: 100%;
     margin: 2rem 0;
-    ${({ theme }) => theme.mq.desktop} {        
+    ${({ theme }) => theme.mq.tablet} {        
         flex-direction: row;
         justify-content: space-around;
         width: 100%;
