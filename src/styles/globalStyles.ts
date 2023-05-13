@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
         max-width: 100vw;
-        position: absolute;
+        position: relative;
         overflow-x: hidden;
         background-color: #ECE9EA;
         font-family: ${inter.style.fontFamily};
