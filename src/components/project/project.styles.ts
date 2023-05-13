@@ -2,11 +2,14 @@ import styled from "styled-components";
 import Image from "next/image";
 
 export const StyledWrapper = styled.div`
-    position: relative;
     width: 100%;
     margin-bottom: 150px;
     gap: 10px;
-    height: 25vw;
+    height: auto;
+    position: relative;
+    ${({ theme }) => theme.mq.tablet} {
+        height: 45vw;
+    }
     ${({ theme }) => theme.mq.desktop} {
         height: 35vw;
     }
@@ -16,12 +19,13 @@ export const StyledWrapper = styled.div`
 `
 
 export const StyledImageWrapper = styled.a<{order: number}>`
-    width: 55%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    left: ${({ order }) => order % 2 === 0 ?  '0' : '45%'};
+    ${({ theme }) => theme.mq.tablet} {
+        top: 0;
+        position: absolute;
+        left: ${({ order }) => order % 2 === 0 ?  '0' : '45%'};
+        width: 55%;
+    }
 `
 
 export const StyledImage = styled(Image)`
@@ -32,17 +36,19 @@ export const StyledImage = styled(Image)`
 `
 
 export const StyledDescriptionsWrapper = styled.div<{order: number}>`
-    position: absolute;
-    top: 0;
-    left: 50%;
-    left: ${({ order }) => order % 2 === 0 ?  '50%' : '0'};
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: ${({ order }) => order % 2 === 0 ?  'flex-end' : 'flex-start'};
-    gap: 2rem;
-    width: 50%;
     height: 100%;
+    align-items: ${({ order }) => order % 2 === 0 ?  'flex-end' : 'flex-start'};
+    gap: 2.5rem;
+    width: 100%;
+    ${({ theme }) => theme.mq.tablet} {
+        position: absolute;
+        width: 50%;
+        top: 0;
+        left: ${({ order }) => order % 2 === 0 ?  '50%' : '0'};
+    }
 `
 
 export const StyledType = styled.p`
@@ -62,6 +68,9 @@ export const StyledDescription = styled.p`
     text-align: right;
     padding: 20px;
     border-radius: .5rem;
+    ${({ theme }) => theme.mq.tablet} {
+        font-size: ${({ theme }) => theme.font.size.xs};
+    }
 `
 
 export const StyledTechnologiesWrapper = styled.ul`
