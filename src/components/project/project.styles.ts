@@ -14,7 +14,7 @@ export const StyledWrapper = styled.div`
         height: 28vw;
     }
     ${({ theme }) => theme.mq.bigDesktop} {
-        height: 22.5vw;
+        height: 22vw;
     }
 `
 
@@ -32,6 +32,7 @@ export const StyledImage = styled(Image)`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     border-radius: 1.2rem;
 `
 
