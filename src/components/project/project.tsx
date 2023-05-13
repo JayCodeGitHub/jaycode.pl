@@ -10,10 +10,14 @@ import {
   StyledTechnology,
 } from "./project.styles";
 
-export default function Project() {
+export interface ProjectProps {
+  i: number;
+}
+
+export default function Project({ i }: ProjectProps) {
   return (
     <StyledWrapper>
-      <StyledImageWrapper>
+      <StyledImageWrapper order={i}>
         <StyledImage
           src={"/images/karate.webp"}
           width={1590}
@@ -21,10 +25,16 @@ export default function Project() {
           alt="Project image"
         />
       </StyledImageWrapper>
-      <StyledDescriptionsWrapper>
+      <StyledDescriptionsWrapper order={i}>
         <StyledType>Commercial</StyledType>
         <StyledTitle>Karate</StyledTitle>
-        <StyledDescription>Description</StyledDescription>
+        <StyledDescription>
+          Still in progress refreshed website of Karate Team Oborniki.
+          Technologies used in the project were selected for the clients needs.
+          So I used Server Site Rendering to speed up loading times. For
+          animation I used GSAP and ScrollTrigger. The data is downloaded from
+          Dato CMS from where the client can manage the content of the site.
+        </StyledDescription>
         <StyledTechnologiesWrapper>
           <StyledTechnology>React</StyledTechnology>
           <StyledTechnology>Next.js</StyledTechnology>
