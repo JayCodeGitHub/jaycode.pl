@@ -6,11 +6,10 @@ export const StyledOuterWrapper = styled.section`
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: calc(65vh);
+    min-height: calc(60vh);
     padding: 2.5vw;
     ${({ theme }) => theme.mq.tablet} {  
         flex-direction: row;
-        height: 55vh;
         padding: 2.5vw 15vw;
     }
 `

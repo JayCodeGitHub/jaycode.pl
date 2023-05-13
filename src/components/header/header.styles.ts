@@ -10,7 +10,7 @@ export const StyledWrapper = styled.header`
     ${({ theme }) => theme.mq.desktop}  {
         padding-left: 0;
         width: auto;
-        height: 20vh;
+        height: 25vh;
     }
 `
 
@@ -20,9 +20,8 @@ export const StyledTitle = styled.h1`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2.5rem 0;
+    margin: 0;
     ${({ theme }) => theme.mq.desktop}  {
         font-size: ${({ theme }) => theme.font.size.xxl};
-        margin: 5rem 0 0 0;
     }
 `
