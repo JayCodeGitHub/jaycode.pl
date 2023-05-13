@@ -8,13 +8,13 @@ export const StyledWrapper = styled.div`
     height: auto;
     position: relative;
     ${({ theme }) => theme.mq.tablet} {
-        height: 45vw;
+        height: 28vw;
     }
     ${({ theme }) => theme.mq.desktop} {
-        height: 35vw;
+        height: 28vw;
     }
     ${({ theme }) => theme.mq.bigDesktop} {
-        height: 25vw;
+        height: 22.5vw;
     }
 `
 

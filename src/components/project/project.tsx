@@ -19,9 +19,9 @@ export default function Project({ i }: ProjectProps) {
     <StyledWrapper>
       <StyledImageWrapper order={i}>
         <StyledImage
-          src={"/images/karate.webp"}
-          width={1590}
-          height={1000}
+          src={"/images/karate-team.jpg"}
+          width={1500}
+          height={771}
           alt="Project image"
         />
       </StyledImageWrapper>
