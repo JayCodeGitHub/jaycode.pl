@@ -6,9 +6,11 @@ import {
   StyledType,
   StyledTitle,
   StyledDescription,
+  StyledLinksWrapper,
   StyledTechnologiesWrapper,
   StyledTechnology,
 } from "./project.styles";
+import SocialMediaButton from "../socialMediaButton/socialMediaButton";
 
 export interface ProjectProps {
   order: number;
@@ -47,6 +49,14 @@ export default function Project({
             <StyledTechnology key={i}>{item}</StyledTechnology>
           ))}
         </StyledTechnologiesWrapper>
+        <StyledLinksWrapper>
+          <SocialMediaButton href={github} type="github">
+            Source
+          </SocialMediaButton>
+          <SocialMediaButton href={href} type="website">
+            Website
+          </SocialMediaButton>
+        </StyledLinksWrapper>
       </StyledDescriptionsWrapper>
     </StyledWrapper>
   );

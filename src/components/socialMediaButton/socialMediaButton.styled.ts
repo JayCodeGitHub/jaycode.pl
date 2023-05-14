@@ -16,7 +16,7 @@ export const StyledWrapper = styled.button`
     background-color: ${({ theme }) => theme.tertiary};
     border: solid 2px ${({ theme }) => theme.white};
     border-radius: 1.2rem;
-    padding: 1.2rem 2.5rem;
+    padding: .8rem 2rem;
     width: 100%;
     transition: all 0.2s ease-in-out;
     svg {

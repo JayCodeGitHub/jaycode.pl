@@ -74,11 +74,19 @@ export const StyledDescription = styled.p`
     }
 `
 
+export const StyledLinksWrapper = styled.span`
+    display: flex;
+    gap: 4rem;
+    width: min-content;
+`
+
 export const StyledTechnologiesWrapper = styled.ul`
     color: ${({ theme }) => theme.primary};
     display: flex;
+    width: 80%;
     gap: 2rem;
     list-style: none;
+    flex-wrap: wrap;
 `
 
 export const StyledTechnology = styled.li`
