@@ -34,8 +34,8 @@ export default function AboutSection() {
           <StyledImage
             src={image}
             loading="eager"
-            width={500}
-            height={643}
+            width={777}
+            height={1000}
             alt="Profile image"
           />
         </StyledImageWrapper>

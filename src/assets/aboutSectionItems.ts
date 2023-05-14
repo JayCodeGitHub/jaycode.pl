@@ -42,5 +42,5 @@ export const AboutSectionItems = {
         alt: `Git logo`,
       },
     ],
-    image: `/images/profile.webp`,
+    image: `/images/profile-big.jpg`,
   };
