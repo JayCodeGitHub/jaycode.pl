@@ -44,7 +44,7 @@ export default function Project({
         <StyledType>{type}</StyledType>
         <StyledTitle>{title}</StyledTitle>
         <StyledDescription>{description}</StyledDescription>
-        <StyledTechnologiesWrapper>
+        <StyledTechnologiesWrapper order={order}>
           {technologies.map((item, i) => (
             <StyledTechnology key={i}>{item}</StyledTechnology>
           ))}

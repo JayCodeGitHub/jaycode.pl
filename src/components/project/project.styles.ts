@@ -80,10 +80,10 @@ export const StyledLinksWrapper = styled.span`
     width: min-content;
 `
 
-export const StyledTechnologiesWrapper = styled.ul`
+export const StyledTechnologiesWrapper = styled.ul<{order: number}>`
+    padding: ${({ order }) => order % 2 === 0 ?  '0 0 0 20% ' : '0 20% 0 0'};
     color: ${({ theme }) => theme.primary};
     display: flex;
-    width: 80%;
     gap: 2rem;
     list-style: none;
     flex-wrap: wrap;
