@@ -25,7 +25,7 @@ export const StyledDescriptionsWrapper = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 4rem;
+    gap: 5rem;
     padding: 5%;
     ${({ theme }) => theme.mq.desktop} {
         width: 65%;
@@ -43,7 +43,9 @@ export const StyledDescription = styled.p`
 `
 
 export const StyledLinksWrapper = styled.span`
-    color: ${({ theme }) => theme.white};
+    display: flex;
+    gap: 4rem;
+    width: min-content;
 `
 
 export const StyledTechnologiesWrapper = styled.ul`
