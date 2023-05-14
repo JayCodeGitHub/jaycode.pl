@@ -4,8 +4,10 @@ import {
   StyledDescriptionsWrapper,
   StyledTitle,
   StyledDescription,
+  StyledLinksWrapper,
   StyledTechnologiesWrapper,
   StyledTechnology,
+  StyledImageWrapper,
   StyledImage,
 } from "./aboutSection.styles";
 
@@ -21,17 +23,53 @@ export default function AboutSection() {
             will be a good member of the team because I learn quickly and work
             well in a team.
           </StyledDescription>
+          <StyledLinksWrapper>Linked In, GitHub</StyledLinksWrapper>
           <StyledTechnologiesWrapper>
-            <StyledTechnology>React</StyledTechnology>
+            <h3>Tech Stack</h3>
+            <li>
+              <StyledTechnology src="/icons/scss.svg" alt="Technology Logo" />
+            </li>
+            <li>
+              <StyledTechnology src="/icons/html.svg" alt="Technology Logo" />
+            </li>
+            <li>
+              <StyledTechnology src="/icons/js.svg" alt="Technology Logo" />
+            </li>
+            <li>
+              <StyledTechnology src="/icons/ts.svg" alt="Technology Logo" />
+            </li>
+            <li>
+              <StyledTechnology src="/icons/redux.svg" alt="Technology Logo" />
+            </li>
+            <li>
+              <StyledTechnology src="/icons/react.svg" alt="Technology Logo" />
+            </li>
+            <li>
+              <StyledTechnology
+                src="/icons/tailwind.svg"
+                alt="Technology Logo"
+              />
+            </li>
+            <li>
+              <StyledTechnology
+                src="/icons/graphql.svg"
+                alt="Technology Logo"
+              />
+            </li>
+            <li>
+              <StyledTechnology src="/icons/git.svg" alt="Technology Logo" />
+            </li>
           </StyledTechnologiesWrapper>
         </StyledDescriptionsWrapper>
-        <StyledImage
-          src="/images/profile.webp"
-          loading="eager"
-          width={500}
-          height={643}
-          alt="Profile image"
-        />
+        <StyledImageWrapper>
+          <StyledImage
+            src="/images/profile.webp"
+            loading="eager"
+            width={500}
+            height={643}
+            alt="Profile image"
+          />
+        </StyledImageWrapper>
       </StyledWrapper>
     </StyledOuterWrapper>
   );
