@@ -11,16 +11,25 @@ export const StyledOuterWrapper = styled.section`
 
 export const StyledWrapper = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     width: 100%;
+    gap: 10rem;
+    margin-bottom: 5rem;
+    ${({ theme }) => theme.mq.desktop} {
+        flex-direction: row;
+        gap: 0;
+    }
 `
 
 export const StyledDescriptionsWrapper = styled.div`
-    padding: 5%;
-    width: 65%;
-    gap: 4rem;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+    padding: 5%;
+    ${({ theme }) => theme.mq.desktop} {
+        width: 65%;
+    }
 `
 
 export const StyledTitle = styled.h2`
@@ -38,34 +47,60 @@ export const StyledLinksWrapper = styled.span`
 `
 
 export const StyledTechnologiesWrapper = styled.ul`
-    color: ${({ theme }) => theme.white};
-    list-style: none;
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    color: ${({ theme }) => theme.white};
+    width: 100%;
+    height: auto;
+    gap: 5rem;
+    list-style: none;
     h3 {
+        text-align: center;
+        width: 100%;
         font-size: ${({ theme }) => theme.font.size.s};
-        padding-right: 2rem;
-        margin-right: 2rem;
-        border-right: solid 2px ${({ theme }) => theme.grey};
+        padding-bottom: 1.8rem;
+        margin-bottom: 1.8rem;
+        border-bottom: solid 2px ${({ theme }) => theme.grey};
+    }
+    ${({ theme }) => theme.mq.desktop} {
+        justify-content: flex-start;
+        gap: 1.8rem;
+        h3 {
+            width: auto;
+            border-bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            padding-right: 1.8rem;
+            margin-right: 1.8rem;
+            border-right: solid 2px ${({ theme }) => theme.grey};
+        }
     }
 `
 
 export const StyledTechnology = styled.img`
-    color: ${({ theme }) => theme.primary};
     width: 4rem;
     height: 4rem;
+    color: ${({ theme }) => theme.primary};
 `
 
 export const StyledImageWrapper = styled.div`
-    width: 35%;
+    ${({ theme }) => theme.mq.desktop} {
+        width: 35%;
+    }
+    width: 100%;
 `
 
 export const StyledImage = styled(Image)`
-    width: 95%;
+    width: 80%;
     height: auto;
-    margin: 0 2.5%;
+    margin: 0 10%;
     object-fit: contain;
     border-radius: 1.2rem;
+    ${({ theme }) => theme.mq.desktop} {
+        width: 90%;
+        height: auto;
+        margin: 0 5%;
+    }
 `
