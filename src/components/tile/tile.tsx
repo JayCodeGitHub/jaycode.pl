@@ -14,7 +14,7 @@ interface TileProps {
   href: string;
   title: string;
   description: string;
-  buttonHref: string;
+  source: string;
   color: string;
   image: string;
 }
@@ -23,15 +23,17 @@ export default function Tile({
   href,
   title,
   description,
-  buttonHref,
+  source,
   color,
   image,
 }: TileProps) {
   const [isActive, setIsActive] = useState("false");
+  console.log(source);
   return (
     <StyledWrapper>
       <StyledLink
         href={href}
+        target="_blank"
         aria-label="Link to project website"
         onMouseEnter={() => setIsActive("true")}
         onMouseLeave={() => setIsActive("false")}
@@ -39,7 +41,7 @@ export default function Tile({
       <StyledTileContent>
         <StyledTitle>{title}</StyledTitle>
         <StyledDescription>{description}</StyledDescription>
-        <a href={buttonHref}>
+        <a href={source} target="_blank">
           <StyledButton>Source</StyledButton>
         </a>
       </StyledTileContent>

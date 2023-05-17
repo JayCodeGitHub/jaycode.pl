@@ -17,13 +17,13 @@ export default function Tiles() {
       </StyledHeader>
       <StyledWrapper>
         {TilesItems.map(
-          ({ href, title, description, buttonHref, color, image }, i) => (
+          ({ href, title, description, source, color, image }, i) => (
             <Tile
               key={i}
               href={href}
               title={title}
               description={description}
-              buttonHref={buttonHref}
+              source={source}
               color={color}
               image={image}
             />
