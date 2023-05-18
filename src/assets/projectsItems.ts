@@ -65,7 +65,7 @@ export const ProjectsItems = [
       image: '/images/champion-academy.jpg',
       alt: 'Screenshot from Champion Academy desktop website',
       type: 'commercial',
-      name: 'Champion-Academy',
+      title: 'Champion-Academy',
       description:
       'Champion Academy is a local sports club based in Oborniki. They asked me to create their website. Working with the client required me to customize the tools. The client required, that the site should be well positioned and that they should be able to change its content.',
       technologies: ['React', 'Gatsby', 'Dato CMS', 'tailwind css', 'GraphQL'],
