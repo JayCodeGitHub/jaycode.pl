@@ -6,12 +6,12 @@ export const AboutSectionItems = {
     well in a team.`,
     technologies: [
       {
-        image: `/icons/scss.svg`,
-        alt: `SCSS logo`,
-      },
-      {
         image: `/icons/html.svg`,
         alt: `HTML logo`,
+      },
+      {
+        image: `/icons/scss.svg`,
+        alt: `SCSS logo`,
       },
       {
         image: `/icons/js.svg`,
@@ -22,12 +22,16 @@ export const AboutSectionItems = {
         alt: `TypeScript logo`,
       },
       {
-        image: `/icons/redux.svg`,
-        alt: `Redux logo`,
+        image: `/icons/git.svg`,
+        alt: `Git logo`,
       },
       {
         image: `/icons/React.svg`,
         alt: `React logo`,
+      },
+      {
+        image: `/icons/redux.svg`,
+        alt: `Redux logo`,
       },
       {
         image: `/icons/tailwind.svg`,
@@ -36,10 +40,6 @@ export const AboutSectionItems = {
       {
         image: `/icons/graphql.svg`,
         alt: `GraphQL logo`,
-      },
-      {
-        image: `/icons/git.svg`,
-        alt: `Git logo`,
       },
     ],
     image: `/images/profile-big.jpg`,
