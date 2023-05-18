@@ -81,12 +81,15 @@ export const StyledLinksWrapper = styled.span`
 `
 
 export const StyledTechnologiesWrapper = styled.ul<{order: number}>`
-    padding: ${({ order }) => order % 2 === 0 ?  '0 0 0 20% ' : '0 20% 0 0'};
-    color: ${({ theme }) => theme.primary};
     display: flex;
-    gap: 2rem;
-    list-style: none;
     flex-wrap: wrap;
+    gap: 2rem;
+    color: ${({ theme }) => theme.primary};
+    list-style: none;
+    padding: 0;
+    ${({ theme }) => theme.mq.tablet} {
+        padding: ${({ order }) => order % 2 === 0 ?  '0 0 0 20% ' : '0 20% 0 0'};
+    }
 `
 
 export const StyledTechnology = styled.li`
