@@ -59,10 +59,11 @@ export const StyledTitle = styled.h1`
 export const StyledSubTitle = styled.h2`
     font-size: ${({ theme }) => theme.font.size.s};
     color: ${({ theme }) => theme.grey};
-    margin: 0;
+    margin: 25px 0;
     max-width: 60rem;
     padding-left: 10px;
     ${({ theme }) => theme.mq.desktop}  {
+        margin: 0;
         font-size: ${({ theme }) => theme.font.size.l};
     }
 `
@@ -87,5 +88,9 @@ export const StyledScrollButtonWrapper = styled.a`
     position: absolute;
     top: 92vh;
     left: 50%;
+    display: none;
     transform: translateX(-50%);
+    ${({ theme }) => theme.mq.tablet}  {
+        display: flex;
+    }
 `
