@@ -1,38 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio website #
 
-## Getting Started
+My new personal website. There you will find my portfolio and CV. You can also learn about my skills and known technologies.
 
-First, run the development server:
+## Tech Stack ##
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white) ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Visit Site - [jaycode.pl](https://jaycode.pl/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ ## Preview ##
+![jaycode1](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/6874f5f8-ea8c-4557-b1ad-468737b7baca)<br/><br/>
+![jaycode5](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/efa6786b-b0ec-44b4-90d6-c65892455361)<br/><br/>
+![jaycode2](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/f5da6556-918b-40b4-9d4c-83fb27b670f2)<br/><br/>
+![jaycode3](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/23fee80f-b279-4653-91f1-aa0eedf17b11)<br/><br/>
+![jaycode4](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/60532998-e225-43b7-b60d-50f82c012914)<br/><br/>
