@@ -18,6 +18,9 @@ export const StyledOuterWrapper = styled.header`
     ${({ theme }) => theme.mq.bigDesktop}  {
         padding: 8% 18%;
     }
+    span {
+        overflow: hidden;
+    }
 `
 
 export const StyledWrapper = styled.div`

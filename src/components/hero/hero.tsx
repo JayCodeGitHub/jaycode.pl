@@ -11,11 +11,23 @@ import Button from "../button/button.styles";
 import Link from "next/link";
 import ScrollButton from "../scrollButton/scrollButton";
 import { heroItems } from "@/assets/heroItems";
+import { motion } from "framer-motion";
+
+const MotionImage = motion(StyledImage);
+const MotionTitle = motion(StyledTitle);
+const MotionSubTitle = motion(StyledSubTitle);
+const MotionCV = motion(Button);
+const MotionContact = motion(Button);
+const MotionScroll = motion(StyledScrollButtonWrapper);
 
 export default function Hero() {
   return (
     <StyledOuterWrapper>
-      <StyledImage
+      <MotionImage
+        initial={{ opacity: "0%" }}
+        animate={{ opacity: "100%" }}
+        transition={{ duration: 0.4, ease: "easeInOut" }}
+        exit={{ x: "-100%" }}
         src="/images/profile.webp"
         loading="eager"
         width={500}
@@ -23,23 +35,59 @@ export default function Hero() {
         alt="Profile image"
       />
       <StyledWrapper>
-        <StyledTitle>{heroItems.title}</StyledTitle>
-        <StyledSubTitle>{heroItems.subTitle}</StyledSubTitle>
+        <span>
+          <MotionTitle
+            initial={{ x: "-100%" }}
+            animate={{ x: "0%" }}
+            transition={{ delay: 0.4, duration: 0.4, ease: "easeInOut" }}
+            exit={{ x: "-100%" }}
+          >
+            {heroItems.title}
+          </MotionTitle>
+        </span>
+        <span>
+          <MotionSubTitle
+            initial={{ x: "-100%" }}
+            animate={{ x: "0%" }}
+            transition={{ delay: 0.8, duration: 0.4, ease: "easeInOut" }}
+            exit={{ opacity: "0%" }}
+          >
+            {heroItems.subTitle}
+          </MotionSubTitle>
+        </span>
         <StyledButtonsWrapper>
           <a href={heroItems.buttonHref} target="_blank">
-            <Button>{heroItems.button}</Button>
+            <MotionCV
+              initial={{ opacity: "0%" }}
+              animate={{ opacity: "100%" }}
+              transition={{ delay: 1.2, duration: 0.4, ease: "easeInOut" }}
+              exit={{ opacity: "0%" }}
+            >
+              {heroItems.button}
+            </MotionCV>
           </a>
           <Link href={heroItems.secondButtonHref}>
-            <Button>{heroItems.secondButton}</Button>
+            <MotionContact
+              initial={{ opacity: "0%" }}
+              animate={{ opacity: "100%" }}
+              transition={{ delay: 1.6, duration: 0.4, ease: "easeInOut" }}
+              exit={{ opacity: "0%" }}
+            >
+              {heroItems.secondButton}
+            </MotionContact>
           </Link>
         </StyledButtonsWrapper>
       </StyledWrapper>
-      <StyledScrollButtonWrapper
+      <MotionScroll
+        initial={{ opacity: "0%" }}
+        animate={{ opacity: "100%" }}
+        transition={{ delay: 1.6, duration: 0.4, ease: "easeInOut" }}
+        exit={{ opacity: "0%" }}
         href="#projects"
         aria-label="Scroll Down Button"
       >
         <ScrollButton />
-      </StyledScrollButtonWrapper>
+      </MotionScroll>
     </StyledOuterWrapper>
   );
 }

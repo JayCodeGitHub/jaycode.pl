@@ -1,8 +1,9 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Layout from "@/components/layout/layout";
+import { AnimatePresence } from "framer-motion";
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <>
       <Head>
@@ -17,7 +18,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.jpg" />
       </Head>
       <Layout>
-        <Component {...pageProps} />
+        <AnimatePresence mode={"wait"}>
+          <Component {...pageProps} />
+        </AnimatePresence>
       </Layout>
     </>
   );
