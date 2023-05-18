@@ -26,7 +26,7 @@ export const AboutSectionItems = {
         alt: `Git logo`,
       },
       {
-        image: `/icons/React.svg`,
+        image: `/icons/react.svg`,
         alt: `React logo`,
       },
       {
