@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Image from "next/image";
 
 export const StyledOuterWrapper = styled.section`
-    padding: 2.5vw;
     ${({ theme }) => theme.mq.bigDesktop} {
         padding: 0 15vw;
         margin: 2.5vw 0 4vw 0;
