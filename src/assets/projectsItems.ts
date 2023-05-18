@@ -50,4 +50,26 @@ export const ProjectsItems = [
       href: `https://clothify-app.vercel.app/`,
       github: `https://github.com/JayCodeGitHub/Clothify`,
     },
+    {
+      image: '/images/car-dealer.jpg',
+      alt: 'Screenshot from Car Dealer desktop website',
+      type: 'Non-commercial',
+      title: 'Car Dealer website',
+      description:
+      'I created this project in order to learn Next.js and Material UI technologies. The site features a modern and responsive design, along with various pages such as about, offer and contact. It also includes dynamic routing and server-side rendering for improved performance. This project allowed me to gain valuable experience in front-end development and working with popular web frameworks.',
+      technologies: ['Next JS', 'React', 'TypeScript', 'Material UI'],
+      href: 'https://car-dealer-ten.vercel.app/',
+      github: 'https://github.com/JayCodeGitHub/Car-Dealer',
+    },
+    {
+      image: '/images/champion-academy.jpg',
+      alt: 'Screenshot from Champion Academy desktop website',
+      type: 'commercial',
+      name: 'Champion-Academy',
+      description:
+      'Champion Academy is a local sports club based in Oborniki. They asked me to create their website. Working with the client required me to customize the tools. The client required, that the site should be well positioned and that they should be able to change its content.',
+      technologies: ['React', 'Gatsby', 'Dato CMS', 'tailwind css', 'GraphQL'],
+      href: 'https://championacademy.pl/',
+      github: 'https://github.com/JayCodeGitHub/Final-Champion-Academy',
+    },
   ];
