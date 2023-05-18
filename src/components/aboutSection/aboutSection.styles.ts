@@ -34,17 +34,23 @@ export const StyledDescriptionsWrapper = styled.div`
 
 export const StyledTitle = styled.h2`
     color: ${({ theme }) => theme.white};
-    font-size: ${({ theme }) => theme.font.size.m};
+    font-size: ${({ theme }) => theme.font.size.s};
+    ${({ theme }) => theme.mq.desktop} {
+        font-size: ${({ theme }) => theme.font.size.m};
+    }
 `
 
 export const StyledDescription = styled.p`
     color: ${({ theme }) => theme.grey};
-    font-size: ${({ theme }) => theme.font.size.s};
+    font-size: ${({ theme }) => theme.font.size.xs};
+    ${({ theme }) => theme.mq.desktop} {
+        font-size: ${({ theme }) => theme.font.size.s};
+    }
 `
 
 export const StyledLinksWrapper = styled.span`
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
     width: min-content;
 `
 
