@@ -5,10 +5,10 @@ export const StyledOuterWrapper = styled.header`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
     width: 100vw;
     height: calc(100vh - 8rem);
-    padding: 2rem 0;
+    padding: 1rem 0;
     ${({ theme }) => theme.mq.tablet}  { 
         flex-direction: row;
         align-items: flex-start;
@@ -27,7 +27,7 @@ export const StyledWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 32vh;
+    min-height: 32vh;
     ${({ theme }) => theme.mq.desktop}  { 
         height: 35rem;
     }
@@ -85,7 +85,7 @@ export const StyledImage = styled(Image)`
 
 export const StyledScrollButtonWrapper = styled.a`
     position: absolute;
-    top: 90vh;
+    top: 92vh;
     left: 50%;
     transform: translateX(-50%);
 `
