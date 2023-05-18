@@ -27,7 +27,7 @@ export default function Hero() {
         initial={{ opacity: "0%" }}
         animate={{ opacity: "100%" }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
-        exit={{ x: "-100%" }}
+        exit={{ opacity: "0%" }}
         src="/images/profile.webp"
         loading="eager"
         width={500}
@@ -50,7 +50,7 @@ export default function Hero() {
             initial={{ x: "-100%" }}
             animate={{ x: "0%" }}
             transition={{ delay: 0.8, duration: 0.4, ease: "easeInOut" }}
-            exit={{ opacity: "0%" }}
+            exit={{ x: "-100%" }}
           >
             {heroItems.subTitle}
           </MotionSubTitle>
@@ -81,7 +81,7 @@ export default function Hero() {
       <MotionScroll
         initial={{ opacity: "0%" }}
         animate={{ opacity: "100%" }}
-        transition={{ delay: 1.6, duration: 0.4, ease: "easeInOut" }}
+        transition={{ delay: 2, duration: 0.4, ease: "easeInOut" }}
         exit={{ opacity: "0%" }}
         href="#projects"
         aria-label="Scroll Down Button"
