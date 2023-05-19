@@ -86,11 +86,11 @@ export const StyledImage = styled(Image)`
 
 export const StyledScrollButtonWrapper = styled.a`
     position: absolute;
-    top: 92vh;
+    top: 90vh;
     left: 50%;
     display: none;
     transform: translateX(-50%);
     ${({ theme }) => theme.mq.tablet}  {
-        display: flex;
+        display: initial;
     }
 `
