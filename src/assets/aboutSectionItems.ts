@@ -41,6 +41,5 @@ export const AboutSectionItems = {
         image: `/icons/graphql.svg`,
         alt: `GraphQL logo`,
       },
-    ],
-    image: `/images/profile.webp`,
+    ]
   };

@@ -98,13 +98,19 @@ export const StyledTechnology = styled.img`
     color: ${({ theme }) => theme.primary};
 `
 
+
 export const StyledImage = styled(Image)`
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top;
     border-radius: 1.2rem;
-    width: 70vw;
-    height: 90vw;
-    ${({ theme }) => theme.mq.desktop} {
-        width: 20vw;
-        height: 25.8vw;
+    width: 30vh;
+    height: 36vh;
+    ${({ theme }) => theme.mq.desktop}  {
+        width: 23vw;
+        height: 30vw;
+    }
+    ${({ theme }) => theme.mq.bigDesktop}  {
+        width: 18vw;
+        height: 23vw;
     }
 `

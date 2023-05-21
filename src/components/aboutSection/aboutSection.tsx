@@ -13,7 +13,7 @@ import { AboutSectionItems } from "@/assets/aboutSectionItems";
 import SocialMediaButton from "../socialMediaButton/socialMediaButton";
 
 export default function AboutSection() {
-  const { title, description, technologies, image } = AboutSectionItems;
+  const { title, description, technologies } = AboutSectionItems;
   return (
     <StyledOuterWrapper>
       <StyledWrapper>
@@ -44,9 +44,10 @@ export default function AboutSection() {
           </StyledTechnologiesWrapper>
         </StyledDescriptionsWrapper>
         <StyledImage
-          src={image}
-          width={777}
-          height={1000}
+          src="/images/profile.webp"
+          loading="eager"
+          width={500}
+          height={643}
           alt="Profile image"
         />
       </StyledWrapper>
