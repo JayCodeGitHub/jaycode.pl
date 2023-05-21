@@ -27,7 +27,7 @@ export const StyledWrapper = styled.button`
         border: solid 2px ${({ theme }) => theme.grey};
     }
     ${({ theme }) => theme.mq.desktop}  {
-        font-size: ${({ theme }) => theme.font.size.xs};
+        font-size: ${({ theme }) => theme.font.size.s};
         padding: .8rem 2rem;
     }
 `
