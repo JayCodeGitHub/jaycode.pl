@@ -99,13 +99,12 @@ export const StyledTechnology = styled.img`
 `
 
 export const StyledImage = styled(Image)`
-    width: 90%;
-    height: auto;
+    width: 70vw;
+    height: 90vw;
     object-fit: contain;
     border-radius: 1.2rem;
     ${({ theme }) => theme.mq.desktop} {
-        width: 30%;
-        height: auto;
-
+        width: 20vw;
+        height: 25.8vw;
     }
 `
