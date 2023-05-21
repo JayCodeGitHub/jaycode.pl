@@ -11,7 +11,7 @@ export const StyledWrapper = styled.button`
     align-items: center;
     cursor: pointer;
     gap: 1rem;
-    font-size: ${({ theme }) => theme.font.size.s};
+    font-size: ${({ theme }) => theme.font.size.xs};
     color: ${({ theme }) => theme.white};
     background-color: ${({ theme }) => theme.tertiary};
     border: solid 2px ${({ theme }) => theme.white};
