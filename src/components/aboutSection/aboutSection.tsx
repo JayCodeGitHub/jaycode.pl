@@ -7,7 +7,6 @@ import {
   StyledLinksWrapper,
   StyledTechnologiesWrapper,
   StyledTechnology,
-  StyledImageWrapper,
   StyledImage,
 } from "./aboutSection.styles";
 import { AboutSectionItems } from "@/assets/aboutSectionItems";
@@ -44,15 +43,13 @@ export default function AboutSection() {
             ))}
           </StyledTechnologiesWrapper>
         </StyledDescriptionsWrapper>
-        <StyledImageWrapper>
-          <StyledImage
-            src={image}
-            loading="eager"
-            width={777}
-            height={1000}
-            alt="Profile image"
-          />
-        </StyledImageWrapper>
+        <StyledImage
+          src={image}
+          loading="eager"
+          width={777}
+          height={1000}
+          alt="Profile image"
+        />
       </StyledWrapper>
     </StyledOuterWrapper>
   );

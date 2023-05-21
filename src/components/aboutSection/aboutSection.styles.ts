@@ -11,12 +11,17 @@ export const StyledOuterWrapper = styled.section`
 export const StyledWrapper = styled.div`
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     width: 100%;
+    padding: 5%;
     gap: 10rem;
     margin-bottom: 5rem;
     ${({ theme }) => theme.mq.desktop} {
         flex-direction: row;
         gap: 0;
+    }
+    ${({ theme }) => theme.mq.bigDesktop} {
+        padding: 0;
     }
 `
 
@@ -27,8 +32,9 @@ export const StyledDescriptionsWrapper = styled.div`
     gap: 5rem;
     padding: 5%;
     ${({ theme }) => theme.mq.desktop} {
-        width: 65%;
+        width: 70%;
     }
+
 `
 
 export const StyledTitle = styled.h2`
@@ -92,22 +98,14 @@ export const StyledTechnology = styled.img`
     color: ${({ theme }) => theme.primary};
 `
 
-export const StyledImageWrapper = styled.div`
-    ${({ theme }) => theme.mq.desktop} {
-        width: 35%;
-    }
-    width: 100%;
-`
-
 export const StyledImage = styled(Image)`
-    width: 80%;
+    width: 90%;
     height: auto;
-    margin: 0 10%;
     object-fit: contain;
     border-radius: 1.2rem;
     ${({ theme }) => theme.mq.desktop} {
-        width: 90%;
+        width: 30%;
         height: auto;
-        margin: 0 5%;
+
     }
 `
