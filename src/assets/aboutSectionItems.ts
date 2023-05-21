@@ -42,5 +42,5 @@ export const AboutSectionItems = {
         alt: `GraphQL logo`,
       },
     ],
-    image: `/images/profile-big.jpg`,
+    image: `/images/profile.webp`,
   };
