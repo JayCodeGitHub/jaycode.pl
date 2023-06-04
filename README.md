@@ -11,8 +11,6 @@ My new personal website. There you will find my portfolio and CV. You can also l
 
 
  ## Preview ##
-![jaycode1](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/6874f5f8-ea8c-4557-b1ad-468737b7baca)<br/><br/>
-![jaycode5](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/efa6786b-b0ec-44b4-90d6-c65892455361)<br/><br/>
-![jaycode2](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/f5da6556-918b-40b4-9d4c-83fb27b670f2)<br/><br/>
-![jaycode3](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/23fee80f-b279-4653-91f1-aa0eedf17b11)<br/><br/>
-![jaycode4](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/60532998-e225-43b7-b60d-50f82c012914)<br/><br/>
+![JayCode-1](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/9e2c2a4b-b808-4085-ac00-25446a7693db)<br/><br/>
+![JayCode-2](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/a31d28ee-061b-4cc0-9326-37678e41337c)<br/><br/>
+![JayCode-3](https://github.com/JayCodeGitHub/jaycode.pl/assets/66550003/068040b8-a85f-40cf-80c5-57f8368d40bc)<br/><br/>
