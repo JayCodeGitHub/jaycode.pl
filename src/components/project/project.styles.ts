@@ -62,11 +62,11 @@ export const StyledTitle = styled.h2`
     font-size: ${({ theme }) => theme.font.size.s};
 `
 
-export const StyledDescription = styled.p`
+export const StyledDescription = styled.p<{order: number}>`
     color: ${({ theme }) => theme.white};
     font-size: ${({ theme }) => theme.font.size.xs};
     background-color: #1b1b1b;
-    text-align: right;
+    text-align: ${({ order }) => order % 2 === 0 ?  'right' : 'left'};
     padding: 20px;
     border-radius: .5rem;
     ${({ theme }) => theme.mq.tablet} {
