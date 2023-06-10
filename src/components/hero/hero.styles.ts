@@ -68,9 +68,10 @@ export const StyledSubTitle = styled.h2`
     }
 `
 
-export const StyledImage = styled(Image)`
-    object-fit: cover;
-    object-position: top;
+export const StyledImageWrapper = styled.div`
+    background-image: url("/images/small/profile-small.jpg");
+    background-size: cover;
+    background-position: top;
     border-radius: 1.2rem;
     width: 30vh;
     height: 36vh;
@@ -82,6 +83,14 @@ export const StyledImage = styled(Image)`
         width: 18vw;
         height: 23vw;
     }
+`
+
+export const StyledImage = styled(Image)`
+    object-fit: cover;
+    object-position: top;
+    border-radius: 1.2rem;
+    width: 100%;
+    height: 100%;
 `
 
 export const StyledScrollButtonWrapper = styled.a`

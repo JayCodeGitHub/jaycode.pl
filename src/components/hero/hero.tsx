@@ -3,6 +3,7 @@ import {
   StyledTitle,
   StyledSubTitle,
   StyledImage,
+  StyledImageWrapper,
   StyledScrollButtonWrapper,
   StyledOuterWrapper,
   StyledButtonsWrapper,
@@ -13,7 +14,7 @@ import ScrollButton from "../scrollButton/scrollButton";
 import { heroItems } from "@/assets/heroItems";
 import { motion } from "framer-motion";
 
-const MotionImage = motion(StyledImage);
+const MotionImageWrapper = motion(StyledImageWrapper);
 const MotionTitle = motion(StyledTitle);
 const MotionSubTitle = motion(StyledSubTitle);
 const MotionCV = motion(Button);
@@ -23,17 +24,19 @@ const MotionScroll = motion(StyledScrollButtonWrapper);
 export default function Hero() {
   return (
     <StyledOuterWrapper>
-      <MotionImage
+      <MotionImageWrapper
         initial={{ opacity: "0%" }}
         animate={{ opacity: "100%" }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
         exit={{ opacity: "0%" }}
-        src="/images/profile.webp"
-        loading="eager"
-        width={500}
-        height={643}
-        alt="Profile image"
-      />
+      >
+        <StyledImage
+          src="/images/profile.webp"
+          width={500}
+          height={643}
+          alt="Profile image"
+        />
+      </MotionImageWrapper>
       <StyledWrapper>
         <span>
           <MotionTitle
