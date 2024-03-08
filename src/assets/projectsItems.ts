@@ -44,6 +44,8 @@ export const ProjectsItems = [
         "TypeScript",
         "Framer Motion",
         "tailwind css",
+        "PostgreSQL",
+        "Prisma",
       ],
       href: `https://clothify-app.vercel.app/`,
       github: `https://github.com/JayCodeGitHub/clothify-2.0`,
