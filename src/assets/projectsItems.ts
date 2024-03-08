@@ -47,7 +47,7 @@ export const ProjectsItems = [
         "PostgreSQL",
         "Prisma",
       ],
-      href: `https://clothify-app.vercel.app/`,
+      href: `https://clothify-app.vercel.app/shop`,
       github: `https://github.com/JayCodeGitHub/clothify-2.0`,
     },
     {
