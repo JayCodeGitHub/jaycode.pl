@@ -10,7 +10,7 @@ export default function Footer() {
       <StyledEmailWrapper>
         <h2>
           <a href="mailto:jakub.gryzinski@gmail.com">
-            jakub.gryzinski@gamil.com
+            jakub.gryzinski@gmail.com
           </a>
         </h2>
       </StyledEmailWrapper>
