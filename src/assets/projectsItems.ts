@@ -43,7 +43,7 @@ export const ProjectsItems = [
         "React",
         "TypeScript",
         "Framer Motion",
-        "styled-components",
+        "tailwind css",
       ],
       href: `https://clothify-app.vercel.app/`,
       github: `https://github.com/JayCodeGitHub/Clothify`,
