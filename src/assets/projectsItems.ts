@@ -46,7 +46,7 @@ export const ProjectsItems = [
         "tailwind css",
       ],
       href: `https://clothify-app.vercel.app/`,
-      github: `https://github.com/JayCodeGitHub/Clothify`,
+      github: `https://github.com/JayCodeGitHub/clothify-2.0`,
     },
     {
       image: '/images/car-dealer.jpg',
