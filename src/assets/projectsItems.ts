@@ -29,7 +29,7 @@ export const ProjectsItems = [
         "TypeScript",
         "Framer Motion",
       ],
-      href: `https://happy-notes.pl/`,
+      href: `https://happy-notes-pl.vercel.app/`,
       github: `https://github.com/JayCodeGitHub/happy-notes.pl`,
     },
     {
