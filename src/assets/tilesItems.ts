@@ -8,11 +8,11 @@ export const TilesItems = [
       image: "/images/karate.webp",
     },
     {
-      href: "https://happy-notes.pl/",
+      href: "https://happy-notes-pl.vercel.app/",
       title: "Happy Notes",
       description: "Happy Notes is a  application for creating notes. The app has a login system, each user has their own notes.",
       color: "green",
-      source: "https://github.com/JayCodeGitHub/Happy-Notes-2.0",
+      source: "https://github.com/JayCodeGitHub/happy-notes.pl",
       image: "/images/notes.webp",
     },
     {
