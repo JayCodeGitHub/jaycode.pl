@@ -14,7 +14,7 @@ export const ProjectsItems = [
         "Framer Motion",
         "GraphQL",
       ],
-      href: `https://app.netlify.com/sites/final-karate-team/overview`,
+      href: `https://final-karate-team.netlify.app/`,
       github: `https://github.com/JayCodeGitHub/Final-Karate-Team`,
     },
     {
