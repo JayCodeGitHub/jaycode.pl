@@ -1,10 +1,10 @@
 export const TilesItems = [
     {
-      href: "https://karate-team.netlify.app/",
+      href: "https://final-karate-team.netlify.app/",
       title: "Karate Team Oborniki",
       description: "The refreshed website of Karate Team Oborniki. Technologies used in the project allow the content to be changed by the client.",
       color: "red",
-      source: "https://github.com/JayCodeGitHub/karate-team.pl",
+      source: "https://github.com/JayCodeGitHub/Final-Karate-Team",
       image: "/images/karate.webp",
     },
     {
@@ -16,12 +16,12 @@ export const TilesItems = [
       image: "/images/notes.webp",
     },
     {
-      href: "https://clothify-app.vercel.app/",
+      href: "https://clothify-app.vercel.app/shop",
       title: "Clothify",
       description: "Clothify is a clothing store project. The main goal of this project was to understand how to manage application state in React.",
       buttonHref: "/experiance",
       color: "pink",
-      source: "https://github.com/JayCodeGitHub/Clothify",
+      source: "https://github.com/JayCodeGitHub/clothify-2.0",
       image: "/images/clothes.webp",
     },
   ];
