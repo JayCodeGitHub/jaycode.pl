@@ -19,7 +19,7 @@ export default function Projects() {
             title={title}
             description={description}
             technologies={technologies}
-            href={href}
+            href={href || ""}
             github={github}
           />
         )

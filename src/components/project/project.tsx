@@ -53,9 +53,11 @@ export default function Project({
           <SocialMediaButton href={github} type="github">
             Source
           </SocialMediaButton>
-          <SocialMediaButton href={href} type="website">
-            Website
-          </SocialMediaButton>
+          {href && (
+            <SocialMediaButton href={href} type="website">
+              Website
+            </SocialMediaButton>
+          )}
         </StyledLinksWrapper>
       </StyledDescriptionsWrapper>
     </StyledWrapper>
