@@ -31,7 +31,6 @@ export const ProjectsItems = [
       "TypeScript",
       "Framer Motion",
     ],
-    href: `https://happy-notes-pl.vercel.app/`,
     github: `https://github.com/JayCodeGitHub/happy-notes.pl`,
   },
   {
@@ -49,7 +48,6 @@ export const ProjectsItems = [
       "PostgreSQL",
       "Prisma",
     ],
-    href: `https://clothify-app.vercel.app/shop`,
     github: `https://github.com/JayCodeGitHub/clothify-2.0`,
   },
   {
